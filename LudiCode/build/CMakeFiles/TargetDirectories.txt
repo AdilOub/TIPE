@@ -1,0 +1,3 @@
+/home/ady/TIPE/TIPE/LudiCode/build/CMakeFiles/ludi.dir
+/home/ady/TIPE/TIPE/LudiCode/build/CMakeFiles/edit_cache.dir
+/home/ady/TIPE/TIPE/LudiCode/build/CMakeFiles/rebuild_cache.dir
