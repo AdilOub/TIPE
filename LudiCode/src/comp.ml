@@ -83,4 +83,4 @@ and evalC a = match a with
       | Cnand(b,c) -> not((evalC b) && (evalC c))
       | C b -> b
       | _ -> failwith "prout2";;
-    (*bon ça va être plus simple de String.split(' ')*)
+    (*bon ça va être plus simple de String.split(' ')*)  

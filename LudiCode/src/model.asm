@@ -1,18 +1,18 @@
 section .data
     msg db "On joue un coup ", 0ah
-    info db 0
+    coup db 0
+    partie time 512 db 0 
 
 section .text
     global _start
 
 _start:
     mov rax, 10
-    mov [info], rax
+    mov [coup], rax
     call loop
-    
 
 loop:
-    ;on suppose que le coup est écrit en mémoire à l'adresse 0x100
+    ;on suppose que le coup est écrit en mémoire à l'adresse [coup]
     ask_loop:
     call est_legal
     cmp rbx, 1
@@ -46,11 +46,11 @@ jouer_coup: ;joue le coup qui se situe à l'adresse 0x100
 
 fini: ;ecrit dans rbx 1 si la partie est fini
     ;????
-    mov rbx, [info]
+    mov rbx, [coup]
     cmp rbx, 0
     je stop
     dec rbx
-    mov [info], rbx
+    mov [coup], rbx
     xor rbx, rbx
     ret
     stop:
