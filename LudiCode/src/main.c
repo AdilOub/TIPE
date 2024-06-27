@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-
+/*
 typedef enum {
     E_condition,
     E_boucle,
@@ -59,3 +59,8 @@ struct node_t{
 };
 
 //on va pas utiliser la recursivité ici, mais à la place une pile !!!
+*/
+
+int main(){
+    return 45;
+}
