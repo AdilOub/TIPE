@@ -5,7 +5,7 @@ Ce projet ne contient que le compilateur écrit en OCaml d'un language personali
 Voici la grammaire du langage:
 
 ```
-E -> if C then E else E | while C do E done E | get E | set E E E | I 
+E -> if C then E else E | while C do E done E | get E| set E <- E ; E | I 
 I -> entier avec un CAS basique (IA, IS, IT, IF)
 C -> true | false | eq( E , E ) | nand( C , C )
 ```
