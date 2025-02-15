@@ -11,6 +11,10 @@ I -> entier avec un CAS basique (IA, IS, IT, IF)
 C -> true | false | eq( E , E ) | nand( C , C )
 ```
 
+<br>
+Cette grammaire étant LL1, on peut facilement construire l'arbre de syntaxe abstraite d'une expression.
+On génére ensuite du code assembleur x86 recursivement en utilisant principalement les registres rax, rbx et la pile.
+
 Le but de ce language est d'être utilisé dans des fichiers de descriptions personalisés pour les jeux de plateaux.
 Un jeu de plateau est entièrement déterminé par:
 - Un ensemble de configuration Plateau qui peut être reprenster par un ensemble de tableau 2D
